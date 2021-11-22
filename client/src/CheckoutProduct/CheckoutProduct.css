@@ -1,11 +1,21 @@
+.checkout {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid lightgray;
+  background-color: lightgray; */
+}
+
 .checkoutProduct {
   height: 200px;
-  margin: 20px 30px !important;
+  margin-top: 10px;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
+  border-top: 1px solid lightgray;
 }
 
 .checkoutProduct__img {
-  background-color: white;
 }
 .checkoutProduct__img > img {
   /* width: 100%; */

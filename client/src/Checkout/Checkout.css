@@ -2,6 +2,33 @@
   background-color: white;
 }
 
+.checkout__products > div > h2 {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
 .checkout__ad {
   width: 100%;
+}
+
+.checkout__products {
+  margin: 0 30px;
+  margin-top: 30px;
+}
+
+.checkout__total {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 20px;
+  margin-left: 2px !important;
+  display: flex;
+  text-align: left;
+  white-space: nowrap;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-right: 30px;
+  margin-left: -40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
