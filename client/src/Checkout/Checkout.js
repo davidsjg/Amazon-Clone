@@ -6,6 +6,12 @@ import "./Checkout.css";
 function Checkout() {
   const [{ basket }] = useStateValue();
   console.log(basket);
+  let totalPrice = 0;
+
+  basket.map((product) => {
+    totalPrice = totalPrice + product.price;
+  });
+
   return (
     <div className="checkout">
       <div className="checkout__products">
@@ -36,9 +42,16 @@ function Checkout() {
         )}
       </div>
       <div className="checkout__total">
-        <p>
-          Subtotal ({basket?.length} items: ${})
+        <p className="checkout__subtotal">
+          Subtotal ({basket?.length} items):
+          <p>${totalPrice.toFixed(2)}</p>
         </p>
+
+        <p className="checkout__gift">
+          <input name="isGoing" type="checkbox" />
+          <p className="checkout__giftText">This order contains a gift</p>
+        </p>
+        <button className="checkout__button">Proceed to Checkout</button>
       </div>
     </div>
   );
