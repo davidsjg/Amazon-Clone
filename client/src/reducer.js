@@ -1,5 +1,5 @@
 export const initialState = {
-  basket: ["sup", "big dong"],
+  basket: [],
 };
 
 function reducer(state, action) {
