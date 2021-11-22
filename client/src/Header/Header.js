@@ -51,16 +51,14 @@ function Header() {
           <ShoppingCartIcon />
           {/* Number of items in basket */}
           <span className="header__optionLineTwo header__basketCount">
-            {basket.length}
+            {basket?.length}
           </span>
         </div>
       </Link>
       <div
         className="sup"
         //   style={{ color: "white" }}
-      >
-        hello
-      </div>
+      ></div>
     </nav>
   );
 }
