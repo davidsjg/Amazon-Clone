@@ -5,10 +5,10 @@ import "./Checkout.css";
 
 function Checkout() {
   const [{ basket }] = useStateValue();
-  console.log(basket);
+
   let totalPrice = 0;
 
-  basket.map((product) => {
+  basket?.map((product) => {
     totalPrice = totalPrice + product.price;
   });
 
@@ -27,10 +27,10 @@ function Checkout() {
         ) : (
           <div>
             <h2>Your Shopping Basket</h2>
-            {basket.map((product) => {
+            {basket?.map((product) => {
               return (
                 <CheckoutProduct
-                  item={product.id}
+                  id={product.id}
                   title={product.title}
                   image={product.image}
                   price={product.price}
