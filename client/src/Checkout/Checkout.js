@@ -11,9 +11,13 @@ function Checkout() {
   basket?.map((product) => {
     totalPrice = totalPrice + product.price;
   });
+  // let newArr = ["orange", "brown", "blue", "red", "green"];
+  // let newTest = newArr.splice(0, 1);
+  // console.log(newTest);
+  // let myFish = ["angel", "clown", "drum", "mandarin", "sturgeon"];
+  // let removed = newArr.splice(0, 1);
 
-  // myFish is ["angel", "clown", "drum", "sturgeon"]
-  // removed is ["mandarin"]
+  // console.log(removed);
 
   return (
     <div className="checkout">
