@@ -29,12 +29,24 @@ function reducer(state, action) {
       break;
 
     case "REMOVE_FROM_BASKET":
-      let tempFind = state.basket.find((product) => product.id === action.id);
-      let tempIndex = state.basket.indexOf(tempFind) + 1;
-      console.log(tempFind);
-      console.log(tempIndex);
-      let tempArr = state.basket.splice(tempIndex, 1);
+      let tempArr = [...state.basket];
+
+      let index = tempArr.findIndex((product) => {
+        return product.id === action.id;
+      });
+
+      // if (index >= 0) {
+
+      // } else {
+      //   console.warn(
+      //     `Can't remove product ID: ${action.id} as it is not in the array`
+      //   );
+      // }
+
+      let newTemp = tempArr.splice(index, 1);
+
       console.log(tempArr);
+
       return {
         ...state,
         basket: tempArr,

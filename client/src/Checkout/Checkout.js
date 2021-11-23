@@ -12,6 +12,9 @@ function Checkout() {
     totalPrice = totalPrice + product.price;
   });
 
+  // myFish is ["angel", "clown", "drum", "sturgeon"]
+  // removed is ["mandarin"]
+
   return (
     <div className="checkout">
       <div className="checkout__products">

@@ -30,21 +30,21 @@ function Home() {
       </div>
       <div className="home__row">
         <Product
-          id="12321341"
+          id="1232e341"
           title="Amazon - Echo Dot (3rd Gen) - Smart Speaker with Alexa - Charcoal"
           price={11.96}
           image="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287974cv13d.jpg"
           rating={5}
         />
         <Product
-          id="12321341"
+          id="12321r41"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
           rating={5}
         />
         <Product
-          id="12321341"
+          id="123w1341"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
@@ -53,35 +53,35 @@ function Home() {
       </div>
       <div className="home__row">
         <Product
-          id="12321341"
+          id="1q321341"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
           rating={5}
         />
         <Product
-          id="12321341"
+          id="12321341r"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
           rating={5}
         />
         <Product
-          id="12321341"
+          id="12321t341"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
           rating={5}
         />
         <Product
-          id="12321341"
+          id="1232y1341"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
           rating={5}
         />
         <Product
-          id="12321341"
+          id="1232r1341"
           title="The Lean Startup: How Consant Innovation Helps"
           price={11.96}
           image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
