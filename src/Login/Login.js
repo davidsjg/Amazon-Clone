@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
-import { auth } from "../firebase";
 
 function Login() {
+  // const auth = auth();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const login = (e) => {
-    e.preventDefault();
-    auth
-      .signInWithEmailAndPassword(email, password)
-      .catch((e) => alert(e.message));
-  };
-  const register = (e) => {
-    e.preventDefault();
+  // const login = (e) => {
+  //   e.preventDefault();
+  //   auth
+  //     .signInWithEmailAndPassword(email, password)
+  //     .catch((e) => alert(e.message));
+  // };
+  // const register = (e) => {
+  //   e.preventDefault();
 
-    auth
-      .createUserWithEmailAndPassword(email, password)
-      .then((auth) => {})
-      .catch((e) => alert(e.message));
-  };
+  //   auth
+  //     .createUserWithEmailAndPassword(email, password)
+  //     .then((auth) => {})
+  //     .catch((e) => alert(e.message));
+  // };
 
   return (
     <div className="login">
@@ -46,7 +46,7 @@ function Login() {
           <div className="login__input">
             <p>Password</p>
           </div>
-          <button className="login__button" onClick={login} type="submit">
+          <button className="login__button" type="submit">
             Sign In
           </button>
         </form>
@@ -55,9 +55,7 @@ function Login() {
           see our Privacy Notice, our Cookies Notice, and our Interest-Based Ads
           Notice
         </p>
-        <button onClick={register} className="login__register">
-          Create your Amazon Account
-        </button>
+        <button className="login__register">Create your Amazon Account</button>
       </div>
     </div>
   );
